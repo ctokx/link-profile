@@ -1,0 +1,122 @@
+.links {
+  height: 100%;
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  position: relative;
+}
+.profile_image {
+  margin-top: 80px;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.share_icon {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 30%;
+}
+.social_icon {
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.social_icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.links_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.ninjadiv {
+  position: absolute;
+  left: 10%;
+}
+
+button {
+  height: 100px; /* Change height to auto to fit content */
+  width: 80%;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex; /* Add flexbox to align content */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  flex-direction: row; /* Stack content vertically */
+  gap: 5px; /* Add some space between content */
+  border-radius: 40px;
+}
+
+.ninja {
+  transform: scale(0.2);
+
+  left: 0px;
+  object-fit: contain;
+}
+.nobara {
+  transform: scale(0.2);
+
+  left: 0px;
+  object-fit: contain;
+}
+button:hover {
+  animation: shake 0.8s;
+}
+
+/*************************************************/
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
